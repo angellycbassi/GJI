@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/style.css">
     <title>Atividade</title>
 </head>
 <body>
-    <h1>Inscrição para o Passeio Ciclístico</h1>
+    <h1>Inscrição para os Jogos Interclasse</h1>
     <form action="">
         <div class="col1">
             <label for="name">Nome Completo</label>
@@ -27,25 +27,31 @@
             <label for="tel">Telefone</label>
             <input type="tel" name="tel" id="tel" required placeholder="xxxxx-xxxx">
 
-            <label for="cpf">CPF</label>
-            <input type="number" name="cpf" id="cpf" required>
+            <label for="matricula">CPF</label>
+            <input type="number" name="matricula" id="matricula" required>
         </div>
 
         <div class="col2">
-            <label for="data">Data</label>
+            <label for="data">Data de Nascimento</label>
             <input type="date" name="data" id="data" required>
-
-            <label for="idade">Idade</label>
-            <input type="number" name="idade" id="idade" required>
 
             <label for="categoria">Categoria</label>
             <select name="categoria" id="categoria" required>
                 <option value="aluno">Aluno</option>
                 <option value="prof">Professor</option>
+                <option value="familiar">Familiar</option>
             </select>
 
-            <label for="subcategoria">Subcategoria</label>
-            <input type="text" name="subcategoria" id="subcategoria">
+            <label for="esporte">Esporte</label>
+            <select name="esporte" id="esporte" required>
+                <option disabled selected  value="selecionar">Selecionar</option>
+                <option value="volei">Vôlei</option>
+                <option value="futsal">Futsal</option>
+                <option value="handebol">Handebol</option>
+                <option value="basquete">Basquete</option>
+                <option value="volei-areia">Vôlei de Areia</option>
+                <option value="ping-pong">Ping Pong</option>
+            </select>
 
             <label class="termos" for="termos"><input type="checkbox" name="termos" id="termos" required>Aceito os termos de uso de imagem</label>
 
