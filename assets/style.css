@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --cor1: #0e0f1d;
+    --cor2: #0708107d;
+
+    --font: 'Roboto';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: var(--font);
+}
+
+body {
+    background-color: var(--cor1);
+    color: white;
+}
+
+h1 {
+    margin: 4rem 0 2rem;
+    text-align: center;
+}
+
+form {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    background-color: var(--cor2);
+    padding: 2rem;
+}
+
+.col1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.col2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 1.6rem;
+    margin: 1rem 0 .5rem;
+}
+
+input:not(input[type="submit"]), select, option {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+    border-radius: 1rem;
+    background-color: black;
+    padding: 1rem;
+    color: white;
+}
+
+input {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.679);
+}
+
+input[placeholder] {
+    color: white;
+}
+
+.termos {
+    margin: 2rem 0 1rem;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #01011d;
+}
+
+.btn:active {
+    background-color: black;
+}
