@@ -21,18 +21,19 @@ html {
 }
 
 body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
     background-color: var(--cor1);
     color: white;
 }
 
-h1 {
-    margin: 4rem 0 2rem;
-    text-align: center;
-}
 
 form {
     width: 60%;
-    margin: auto;
     display: flex;
     justify-content: center;
     gap: 5rem;
@@ -76,7 +77,11 @@ input[placeholder] {
 }
 
 .termos {
-    margin: 2rem 0 1rem;
+    margin: 2rem 0 1rem .5rem;
+}
+
+input[type="checkbox"] {
+    margin-right: 1rem;
 }
 
 .btn {
