@@ -1,6 +1,13 @@
 Organização das Funções
 
-Sistemas Operacionais: Jorge 
-Banco de Dados: Mariana e Gustavo
-Progamação: Angellyc e Isa
-.....
+Programação
+Página de login: Gustavo Feliciano
+Página principal: Jorge e Edson
+PHP: Gustavo Mobiles e Isa
+Conexão: Kelvem
+
+Banco de dados
+Só mexe em qualquer coisa para ganhar ponto (conserta os erros, melhora o código)
+
+SO
+Não sabemos ainda
