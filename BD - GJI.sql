@@ -1,5 +1,13 @@
--- CREATE DATABASE trabalho;
-USE  trabalho;
+DROP DATABASE IF EXISTS trabalho1;
+CREATE DATABASE trabalho1;
+USE trabalho1;
+
+DROP TABLE IF EXISTS classificacao;
+DROP TABLE IF EXISTS jogo;
+DROP TABLE IF EXISTS times;
+DROP TABLE IF EXISTS participante;
+DROP TABLE IF EXISTS categoria;
+DROP TABLE IF EXISTS turma;
 
 CREATE TABLE turma (
     IDturma INT PRIMARY KEY,
@@ -7,7 +15,7 @@ CREATE TABLE turma (
 );
 
 CREATE TABLE categoria (
-	IDcategoria INT PRIMARY KEY,
+    IDcategoria INT PRIMARY KEY,
     nome VARCHAR(100)
 );
 
@@ -16,18 +24,18 @@ CREATE TABLE participante (
     IDturma INT,
     IDcategoria INT,
     nome VARCHAR(100) NOT NULL,
-    cpf INT,
+    cpf VARCHAR(11),
     data_nascimento DATE,
     email VARCHAR(100),
     esporte VARCHAR(100),
-        FOREIGN KEY (IDturma) REFERENCES turma(IDturma),
-		FOREIGN KEY (IDcategoria) REFERENCES categoria(IDcategoria)
+    FOREIGN KEY (IDturma) REFERENCES turma(IDturma),
+    FOREIGN KEY (IDcategoria) REFERENCES categoria(IDcategoria)
 );
 
 CREATE TABLE times (
     IDtime INT PRIMARY KEY,
-    turma INT,
-    FOREIGN KEY (turma) REFERENCES times(IDturma)
+    IDturma INT,
+    FOREIGN KEY (IDturma) REFERENCES turma(IDturma)
 );
 
 CREATE TABLE jogo (
