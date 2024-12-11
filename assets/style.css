@@ -33,13 +33,21 @@ body {
 
 
 form {
-    width: 60%;
     display: flex;
     justify-content: center;
     gap: 5rem;
     background-color: var(--cor2);
     padding: 2rem;
 }
+
+.form-register {
+    width: 60%;
+}
+
+.form-login {
+    width: 40%;
+}
+
 
 .col1 {
     width: 50%;
