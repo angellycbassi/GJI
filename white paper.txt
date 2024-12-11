@@ -10,5 +10,4 @@ Banco de dados
 Só mexe em qualquer coisa para ganhar ponto (conserta os erros, melhora o código)
 
 SO
-Não sabemos ainda
-...
+Não sabemos ainda...
