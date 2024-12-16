@@ -8,10 +8,10 @@
 </head>
 <body>
     <h1>Inscrição para os Jogos Interclasse</h1>
-    <form action="">
+    <form action="cadastro.php" method="POST">
         <div class="col1">
-            <label for="name">Nome Completo</label>
-            <input type="text" name="name" id="name" required>
+            <label for="nome">Nome Completo</label>
+            <input type="text" name="nome" id="nome" required>
 
             <label for="sexo">Sexo</label>
             <select name="sexo" id="sexo" required>
@@ -24,11 +24,11 @@
             <label for="email">Email</label>
             <input type="email" name="email" id="email" required placeholder="example@gmail.com">
 
-            <label for="tel">Telefone</label>
-            <input type="tel" name="tel" id="tel" required placeholder="xxxxx-xxxx">
+            <label for="telefone">Telefone</label>
+            <input type="telefone" name="telefone" id="telefone" required placeholder="xxxxx-xxxx">
 
-            <label for="matricula">CPF</label>
-            <input type="number" name="matricula" id="matricula" required>
+            <label for="cpf">CPF</label>
+            <input type="number" name="cpf" id="cpf" required>
         </div>
 
         <div class="col2">
@@ -37,20 +37,20 @@
 
             <label for="categoria">Categoria</label>
             <select name="categoria" id="categoria" required>
-                <option value="aluno">Aluno</option>
-                <option value="prof">Professor</option>
-                <option value="familiar">Familiar</option>
+                <option value="1">Aluno</option>
+                <option value="2">Professor</option>
+                <option value="3">Familiar</option>
             </select>
 
             <label for="esporte">Esporte</label>
             <select name="esporte" id="esporte" required>
                 <option disabled selected  value="selecionar">Selecionar</option>
-                <option value="volei">Vôlei</option>
-                <option value="futsal">Futsal</option>
-                <option value="handebol">Handebol</option>
-                <option value="basquete">Basquete</option>
-                <option value="volei-areia">Vôlei de Areia</option>
-                <option value="ping-pong">Ping Pong</option>
+                <option value="1">Vôlei</option>
+                <option value="2">Futsal</option>
+                <option value="3">Handebol</option>
+                <option value="4">Basquete</option>
+                <option value="5">Vôlei de Areia</option>
+                <option value="6">Ping Pong</option>
             </select>
 
             <label class="termos" for="termos"><input type="checkbox" name="termos" id="termos" required>Aceito os termos de uso de imagem</label>

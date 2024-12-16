@@ -27,12 +27,15 @@ CREATE TABLE categoria (
 CREATE TABLE participante (
     IDparticipante INT AUTO_INCREMENT PRIMARY KEY,
     IDturma INT,
-    IDcategoria INT,
     nome VARCHAR(100) NOT NULL,
+    sexo VARCHAR(10),
+    email VARCHAR(100),
+    telefone VARCHAR (11),
     cpf VARCHAR(11),
     data_nascimento DATE,
-    email VARCHAR(100),
+    IDcategoria INT,
     esporte VARCHAR(100),
+    termo boolean,
     FOREIGN KEY (IDturma) REFERENCES turma(IDturma),
     FOREIGN KEY (IDcategoria) REFERENCES categoria(IDcategoria)
 );
@@ -63,3 +66,21 @@ CREATE TABLE classificacao (
     pontos INT DEFAULT 0,
     FOREIGN KEY (IDtime) REFERENCES times(IDtime)
 );
+CREATE TABLE esporte(
+IDesporte INT AUTO_INCREMENT PRIMARY KEY,
+nomeesporte VARCHAR(30)
+);
+
+insert into categoria(nome) values("aluno");
+insert into categoria(nome) values("professor");
+insert into categoria(nome) values("familiar");
+
+insert into esporte(nomeesporte)values("vôlei");
+insert into esporte(nomeesporte) values("futsal");
+insert into esporte(nomeesporte) values("handebol");
+insert into esporte(nomeesporte) values("basquete");
+insert into esporte(nomeesporte) values("vôlei de areia");
+insert into esporte(nomeesporte) values("ping pong");
+
+INSERT INTO participante(nome, sexo, email, telefone, cpf, data, categoria, esporte, termo)
+
