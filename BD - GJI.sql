@@ -67,19 +67,14 @@ CREATE TABLE classificacao (
     FOREIGN KEY (IDtime) REFERENCES times(IDtime) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
-
 INSERT INTO categoria(nome) VALUES ('aluno'), ('professor'), ('familiar');
-
 
 INSERT INTO esporte(nomeesporte) VALUES 
 ('vôlei'), ('futsal'), ('handebol'), ('basquete'), ('vôlei de areia'), ('ping pong');
 
-
 INSERT INTO turma(nome) VALUES ('Turma A'), ('Turma B');
 
-
 INSERT INTO times(IDturma) VALUES (1), (2);
-
 
 INSERT INTO participante(
     nome, sexo, email, telefone, cpf, data_nascimento, IDcategoria, IDturma, IDesporte, termo
