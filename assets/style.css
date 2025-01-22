@@ -31,13 +31,13 @@ html {
     color: white;
 }
 
-.cadastro-principal {
+.register-principal {
     height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    gap: 5rem;
+    gap: 1rem;
     background-color: var(--cor1);
     color: white;
 }
@@ -64,6 +64,8 @@ form {
 
 .form-register {
     width: 60%;
+    margin-top: 5rem;
+    gap: 2rem;
 }
 
 .form-login {
